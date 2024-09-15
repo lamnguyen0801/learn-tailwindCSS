@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/favicon/logo-coffee.ico">
+  <title>Learn TailwindCSS</title>
+  <link href="./output.css" rel="stylesheet">
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <div id="root">
+    <div class="content-wrapper font-Karla text-base max-w-screen-xl mx-auto px-8">
+      <header class="p-6 mx-auto">
+        <nav class="flex justify-between items-center relative">
+          <div class="logo basis-2/6 text-center text-xl font-semibold cursor-pointer">
+            <a href="#">CoffeeStyle</a>
+          </div>
+
+          <ul id="cs-top-menu"
+            class="basis-3/6 hidden lg:flex lg:justify-end lg:items-center lg:gap-8 uppercase text-sm text-gray-500 font-medium">
+            <li class="cs-top-menu-item cs-top-menu-item-active">
+              <a href="#">Home</a>
+            </li>
+            <li class="cs-top-menu-item">
+              <a href="#">Products</a>
+            </li>
+            <li class="cs-top-menu-item">
+              <a href="#">Blog</a>
+            </li>
+            <li class="cs-top-menu-item">
+              <a href="#">About</a>
+            </li>
+            <li class="cs-top-menu-item">
+              <a href="#">Contact</a>
+            </li>
+            <li class="cs-top-menu-item">
+              <a href="#">StyleGuide</a>
+            </li>
+          </ul>
+
+          <ul
+            class="basis-3/6 lg:basis-1/6 flex justify-end items-center ml-16 uppercase text-sm text-gray-500 font-medium">
+            <li class="cs-top-menu-item">
+              <a href="#" class="p-1 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="cs-icon">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                </svg>
+                <span class="mx-2">Cart</span>
+                <span class="cs-badge-circle text-white bg-orange-400">10</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="basis-1/6 lg:hidden flex items-center cursor-pointer px-3 sm:px-8">
+            <svg id="cs-toggle-top-menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" class="cs-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="slider h-[530px] bg-[url('./img/bg-slider-coffee-style.jpg')] bg-cover bg-no-repeat bg-bottom">
+          <div class="w-full h-full bg-gray-900 bg-opacity-40 flex justify-center items-center">
+            <div class="text-center text-white mx-16">
+              <div class="uppercase text-sm font-semibold mb-4">
+                Best place to buy coffee
+              </div>
+              <div class="text-5xl font-medium mb-5">
+                Coffee Mugs
+              </div>
+              <div class="text-lg mb-11">
+                The most versatile furniture system ever created. Designed to fit your life, made to move and grow.
+              </div>
+              <div class="flex justify-center">
+                <button
+                  class="px-6 py-4 uppercase bg-white text-black text-xs font-bold tracking-wider hover:bg-opacity-95">
+                  Explore Our Products
+                </button>
+              </div>
+            </div>
+          </div>
+        </div> <!-- End slider -->
+
+        <div class="story">
+          <div class="w-full flex justify-center items-center">
+            <div class="text-center w-full md:w-3/5 py-16 md:py-24">
+              <div class="text-3xl mb-3">
+                Even the all-powerful Pointing has no control about the blind texts.
+              </div>
+              <div class="leading-6 mb-7">
+                It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the
+                all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day
+                however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of
+                Grammar.
+              </div>
+              <div class="">
+                <a class="cursor-pointer text-bold-coffee font-medium relative before:absolute before:-bottom-2 before:left-0 before:w-full before:h-px before:bg-bold-coffee before:bg-opacity-50 hover:text-bolder-coffee hover:before:bg-bolder-coffee before:transition-all before:ease-in-out before:duration-300">
+                  Read the full story
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> <!-- End story -->
+
+        <!-- <div class="cs-subheadline text-center uppercase text-sm text-gray-400 font-semibold relative before:absolute before:w-10 before:h-px before:bg-gray-400 before:top-[50%] before:left-[41%] after:absolute after:w-10 after:h-px after:bg-gray-400 after:top-[50%] after:right-[41%]">
+          featured mugs
+        </div> -->
+        <div class="flex justify-center items-center">
+          <div class="w-8 h-px bg-gray-300"></div>
+          <div class="text-center uppercase text-sm text-gray-400 font-semibold mx-4">featured mugs</div>
+          <div class="w-8 h-px bg-gray-300"></div>
+        </div>
+
+        <div class="featured-mugs mx-2 sm:mx-28 my-12 flex justify-between flex-wrap">
+          <div class="text-center w-full md:w-[49%] mb-16">
+            <div class="w-full aspect-[4/5]">
+              <div class="bg-[url('./img/mugs-1.jpg')] bg-cover bg-center bg-no-repeat w-full h-full">
+                <a href="#">
+                  <div class="w-full h-full hover:bg-gray-500 hover:bg-opacity-15 transition-all ease-in-out duration-300 hover:transition-all hover:ease-in-out hover:duration-300 relative group">
+                    <div class="absolute w-[90%] bg-white py-3 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn">Explore Mug</div> 
+                    <!-- group-hover: phụ thuộc ptu cha (cha dc hover thì con dc) -->
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="text-xl mt-7 mb-3">
+              Pink Premium Ceramic
+            </div>
+            <div class="text-gray-500 font-semibold tracking-widest">
+              $ 99.00 USD
+            </div>
+          </div>
+          <div class="text-center w-full md:w-[49%]">
+            <div class="w-full sm:aspect-[4/5]">
+              <div class="bg-[url('./img/mugs-2.jpg')] bg-cover bg-center bg-no-repeat w-full h-full">
+                <a href="#">
+                  <div class="w-full h-full hover:bg-gray-500 hover:bg-opacity-15 transition-all ease-in-out duration-300 hover:transition-all hover:ease-in-out hover:duration-300"></div>
+                </a>
+              </div>
+            </div>
+            <div class="text-xl mt-7 mb-3">
+              Golden Designers Mug
+            </div>
+            <div class="text-gray-500 font-semibold tracking-widest">
+              <span class="text-xl font-normal text-bold-coffee">$50.00</span> 
+              <span class="line-through">$69.00 USD</span>
+            </div>
+          </div>
+        </div> <!-- End featured-mugs-->
+
+        <div class="coffee-parallax">
+            <div class="bg-[url('./img/parallax-coffee.jpg')] h-[340px] w-screen relative left-[calc(-50vw+49.34%)] bg-cover bg-no-repeat bg-top bg-fixed ">
+            </div>
+        </div>
+
+        <div class="coffee-magazine">
+
+        </div> <!-- End coffee-magazine-->
+      </main>
+
+      <footer>
+
+      </footer>
+    </div> <!-- End content-wrapper -->
+  </div> <!-- End root -->
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ko để commment dạng // */
+/* cs: coffee style */ 
+.cs-top-menu-expanded {
+    @apply absolute top-10 z-50 w-full text-center bg-white animate-slideDown;
+} 
+
+.cs-top-menu-collapsing {
+    @apply absolute top-10 z-50 w-full text-center bg-white animate-slideUp;
+}
+
+.cs-top-menu-item {
+    @apply cursor-pointer hover:text-gray-800 relative after:lg:absolute after:lg:h-0.5 after:lg:w-0 hover:after:lg:w-full after:lg:bg-light-coffee after:lg:bottom-0 after:lg:left-0 after:lg:transition-all after:lg:ease-in-out after:lg:duration-300;
+}
+
+.cs-top-menu-item-active {
+    @apply text-gray-800 relative after:lg:absolute after:lg:h-0.5 after:lg:w-full after:lg:bg-light-coffee after:lg:bottom-0 after:lg:left-0;
+}
+
+.cs-icon {
+    @apply size-5 inline-block;
+}
+
+.cs-badge-circle {
+    @apply text-sm text-center px-1.5 rounded-full;
+}
